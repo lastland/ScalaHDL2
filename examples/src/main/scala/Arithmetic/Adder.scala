@@ -23,8 +23,9 @@ object Main {
       Signed(0, 5), Signed(0, 5), Signed(0, 6))
     println(handle_Adder.compile)
 
-    // 8081 is FPGA(Simulator) port, 8082 is ScalaHDL host port
-    handle_Adder.network_debug_run("59.78.56.59", 8081, 8082)
+    /*handle_Adder.network_on_off = true
+    val conf : Config = ConfigFactory.load()
+    handle_Adder.network_debug_run()*/
   }
 }
 
