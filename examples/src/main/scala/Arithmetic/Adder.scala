@@ -20,7 +20,7 @@ class Adder[T <: Arithable](clk: HDL[Boolean], rst: HDL[Boolean],
 object Main {
   def main(args: Array[String]) {
     val handle_Adder = new Adder(false, false,
-      Signed(0, 5), Signed(1, 5), Signed(0, 6))
+      Signed(0, 5), Signed(0, 5), Signed(0, 6))
     println(handle_Adder.compile)
 
     // 8081 is FPGA(Simulator) port, 8082 is ScalaHDL host port

@@ -10,11 +10,9 @@ module mux2x32 (a0,a1,s,y);
 
 endmodule
  */
-
 package Mips.Mux2
 
 import NewHDL.Core.HDLBase._
-
 
 class Mux2 (a0:HDL[Unsigned],a1:HDL[Unsigned],
                 s:HDL[Boolean],y:HDL[Unsigned]) extends HDLClass {

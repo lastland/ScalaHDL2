@@ -35,7 +35,6 @@ class Hashmap(reset:HDL[Boolean],clock:HDL[Boolean],set:HDL[Boolean],
     val write_addr = HDLlize(Unsigned(0,length))
     val write_enable = HDLlize(b0)
 
-
     dualPortRam(clock,write_enable,read_addr,write_addr,key_di,key_do,size,width)
     dualPortRam(clock,write_enable,read_addr,write_addr,value_di,value_do,size,width)
     async{
@@ -184,7 +183,6 @@ class Hashmap(reset:HDL[Boolean],clock:HDL[Boolean],set:HDL[Boolean],
   }
   override val toCompile = List(hashmap)
 }
-
 
 object Main{
   def main(args: Array[String]): Unit ={

@@ -14,11 +14,9 @@ module dff32 (d,clk,clrn,q);
       end
 endmodule
  */
-
 package Mips
 
 import NewHDL.Core.HDLBase._
-
 
 class Dff32 (d:HDL[Unsigned],clk:HDL[Boolean],
               clrn:HDL[Boolean],q:HDL[Unsigned]) extends HDLClass {

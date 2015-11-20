@@ -2,7 +2,6 @@ package Mips.Regfile
 
 import NewHDL.Core.HDLBase._
 
-
 class Regfile (rna:HDL[Unsigned],rnb:HDL[Unsigned],
                 d:HDL[Unsigned],wn:HDL[Unsigned],we:HDL[Boolean],
                 clk:HDL[Boolean],clrn:HDL[Boolean],
@@ -14,10 +13,6 @@ class Regfile (rna:HDL[Unsigned],rnb:HDL[Unsigned],
                qa:HDL[Unsigned],qb:HDL[Unsigned],depth:Int,width:Int) :HDLBlock={
 
     val registers = HDLlize((1 to depth).map(Unsigned(_, width)))
-
-    async{
-
-    }
 
     sync((clk,1),(clrn,0)){
       when (rna is 0) {

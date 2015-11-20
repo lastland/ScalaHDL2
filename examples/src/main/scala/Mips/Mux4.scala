@@ -2,7 +2,6 @@ package Mips.Mux4
 
 import NewHDL.Core.HDLBase._
 
-
 class Mux4 (a0:HDL[Unsigned],a1:HDL[Unsigned],
               a2:HDL[Unsigned],a3:HDL[Unsigned],
                s:HDL[Unsigned],y:HDL[Unsigned]) extends HDLClass {
